@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/branco"
+    android:layout_height="match_parent"
+    tools:context=".Main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_alignParentLeft="true"
+        android:onClick="maissd"
+        android:layout_toLeftOf="@+id/vefre"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@drawable/edebel"
+        android:scaleType="centerInside"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>
+    <View
+        android:layout_width="0dp"
+        android:id="@+id/vefre"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/vefre"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_above="@+id/vefree"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:onClick="phfonne"
+                android:background="@drawable/about"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_phone"
+                        android:layout_height="45dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/branco"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:textSize="12dp"
+                        android:text="+55\n(33)99828-5010"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:onClick="esite"
+                android:background="@drawable/service"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_web"
+                        android:layout_height="45dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/branco"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:textSize="12dp"
+                        android:text="www.\nedebelzaakso.com"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:id="@+id/vefree"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_below="@+id/vefree"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:onClick="eemail"
+                android:background="@drawable/portfolio"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:padding="3dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_insta"
+                        android:layout_height="45dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:textColor="@color/branco"
+                        android:layout_gravity="center"
+                        android:gravity="left"
+                        android:textSize="12dp"
+                        android:text="edebel\nzaakso@gmail.com"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:onClick="apmais"
+            android:background="@drawable/contact"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:layout_gravity="center"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_apps"
+                    android:layout_height="45dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/branco"
+                    android:layout_gravity="center"
+                    android:gravity="left"
+                    android:textSize="12dp"
+                    android:text="edebel\nzaakso softwares"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
